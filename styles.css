@@ -26,15 +26,9 @@ body {
 /* Header styling */
 header h1 {
   text-align: center;
-  color: #001f3f; 
+  color: #001f3f;  /* navy blue */
   margin-bottom: 10px;
 }
-
-.card h3 {
-  color: #001f3f; /* navy blue to match theme */
-  margin-bottom: 10px;
-}
-
 
 /* Navigation */
 .nav-bar ul {
@@ -54,27 +48,27 @@ header h1 {
 }
 
 .nav-bar a:hover {
-  color: #001f3f; /* navy blue instead of green */
+  color: #001f3f; /* navy blue */
 }
 
 /* Sections */
 section.box {
   margin-bottom: 20px;
   padding: 20px;
-  border: 2px dashed #001f3f; /* navy blue instead of green */
+  border: 2px dashed #001f3f; /* navy blue */
   background-color: #e8f5e9;
 }
 
-/* Example box for Box Model */
+/* Box Model Example */
 .example-box {
-  width: 200px;
+  width: 100%;
   padding: 20px;
-  border: 4px solid #001f3f; /* navy blue replacing blue/green border for consistency */
+  border: 4px solid #001f3f; /* navy blue border */
   margin: 20px 0;
-  background-color: #bbdefb;
   text-align: center;
 }
 
+/* Image inside Box Model */
 .box-image {
   width: 100%;
   height: auto;
@@ -87,15 +81,34 @@ section.box {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .card {
   flex: 1 1 200px;
-  padding: 15px;
-  border: 2px solid #001f3f; /* navy blue instead of orange/green */
-  background-color: #fff3e0;
+  padding: 20px;                       /* Padding inside the card */
+  border: 2px solid #001f3f;           /* Navy blue border */
+  border-radius: 8px;                   /* Rounded corners */
+  background-color: #fff;               /* White background */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Drop shadow */
   text-align: center;
-  margin-bottom: 20px;
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+}
+
+.card h3 {
+  color: #001f3f; /* Navy blue title */
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
 }
 
 /* Footer */

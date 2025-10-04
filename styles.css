@@ -1,0 +1,100 @@
+/* Reset default margin/padding */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Containers */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  background-color: #fff;
+}
+
+/* Header styling */
+header h1 {
+  text-align: center;
+  color: #001f3f;  /* navy blue instead of green */
+  margin-bottom: 10px;
+}
+
+/* Navigation */
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav-bar a:hover {
+  color: #001f3f; /* navy blue instead of green */
+}
+
+/* Sections */
+section.box {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 2px dashed #001f3f; /* navy blue instead of green */
+  background-color: #e8f5e9;
+}
+
+/* Example box for Box Model */
+.example-box {
+  width: 200px;
+  padding: 20px;
+  border: 4px solid #001f3f; /* navy blue replacing blue/green border for consistency */
+  margin: 20px 0;
+  background-color: #bbdefb;
+  text-align: center;
+}
+
+.box-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Card layout */
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 200px;
+  padding: 15px;
+  border: 2px solid #001f3f; /* navy blue instead of orange/green */
+  background-color: #fff3e0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer p {
+  text-align: center;
+  padding: 10px;
+  color: #555;
+}

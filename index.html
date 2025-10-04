@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Basics & Box Model</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="container">
+    <h1>Welcome to CSS Basics & The Box Model</h1>
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#boxes">Box Model</a></li>
+        <li><a href="#cards">Cards</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="intro" class="box">
+      <h2>Introduction</h2>
+      <p>This page demonstrates basic CSS styling and the use of the Box Model.</p>
+    </section>
+
+    <section id="boxes" class="box">
+      <h2>Understanding the Box Model</h2>
+      <p>The Box Model consists of <strong>content</strong>, <strong>padding</strong>, <strong>border</strong>, and <strong>margin</strong>.</p>
+      <div class="example-box">
+          <img src="Assets/MERN.jpg" alt="MERN Stack Example" class="box-image">
+
+      </div>
+    </section>
+
+    <section id="cards" class="card-container">
+      <h2>Card Layout Example</h2>
+      <div class="card">Card 1: Some content here</div>
+      <div class="card">Card 2: Some content here</div>
+      <div class="card">Card 3: Some content here</div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p>&copy; 2025 CSS Basics Assignment</p>
+  </footer>
+
+</body>
+</html>
